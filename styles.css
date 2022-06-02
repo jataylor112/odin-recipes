@@ -51,6 +51,51 @@ a:hover {
     background-size: cover;
 }
 
+#british-background {
+  background-image: url(./recipes/images/London.jpg);
+  background-size: cover;
+}
+
+#hungarian-background {
+  background-image: url(./recipes/images/budapest.jpg);
+  background-size: cover;
+}
+
+#germany-background {
+  background-image: url(./recipes/images/germany.jpg);
+  background-size: cover;
+}
+
+#spanish-background {
+  background-image: url(./recipes/images/spain.jpg);
+  background-size: cover;
+}
+
+#french-background {
+  background-image: url(./recipes/images/france.jpg);
+  background-size: cover;
+}
+
+#italian-background {
+  background-image: url(./recipes/images/italy.jpg);
+  background-size: cover;
+}
+
+#dutch-background {
+  background-image: url(./recipes/images/amsterdam-night.jpg);
+  background-size: cover;
+}
+
+#danish-background {
+  background-image: url(./recipes/images/denmark.jpg);
+  background-size: cover;
+}
+
+#icelandic-background {
+  background-image: url(./recipes/images/iceland-1.jpg);
+  background-size: cover;
+}
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -61,23 +106,29 @@ a:hover {
   }
 }
 
+.homepage-image {
+  border-radius: 50%;
+  width: 200px;
+  display: flex;
+  float: left;
+  border-width: thick;
+  border: 5px black solid;
+}
+
 .main-content {
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
   margin: auto;
+  margin-right: 586px;
   display: table;
-  clear: both;
   max-width: 694px;
   border-color: black;
   border-width: thick;
   postion: relative;
   animation-name: appear;
-  animation-duration: 1s;
-}
-
-#portugal {
+  animation-duration: 1.5s;
   background-color: #ddffdd;
 }
 
@@ -98,20 +149,17 @@ a:hover {
   padding: 15px;
 }
 
+.resize-height-img {
+  height: 180px;
+}
+
 .coat-of-arms {
   height: 150px;
   width: 150px;
 }
 
-.coat-of-arms-circle, .coat-of-arms-circle-left {
-  background-color: #82F59E;
-  height: 150px;
-  width: 150px;
-  margin-top: 3%;
-  border-radius: 50%;
-  position: inline;
-  animation-name: showcoat;
-  animation-duration: 1s;
+.resize-arms {
+  height: 180px;
 }
 
 /* If screen size differs, the country's coat of arms disappears */
@@ -124,34 +172,20 @@ a:hover {
   }
 }
 
-@keyframes show-heading-and-image {
-    0% { opacity: 0; }
-    25% ( opacity: 0; )
-    50% { opacity: 0; }
-    75% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
 .img-recipes {
   width: 300px;
   display: block;
-  animation-name: show-heading-and-image;
-  animation-duration: 1s;
 }
 
 .recipe-title {
   margin: auto;
   font-size: 40px;
-  width: 370px;
-  animation-name: show-heading-and-image;
-  animation-duration: 1s;
   text-decoration: overline;
 }
 
 h1 {
   margin: auto;
   font-size: 50px;
-  width: 370px;
   text-decoration: overline;
 }
 
@@ -165,6 +199,10 @@ h2 {
 
 li {
   margin: 14px;
+}
+
+.subheading-ingredient {
+  font-weight: bold;
 }
 
 hr {
