@@ -96,6 +96,181 @@ a:hover {
   background-size: cover;
 }
 
+#irish-background {
+  background-image: url(./recipes/images/ireland.png);
+  background-size: cover;
+}
+
+#norwegian-background {
+  background-image: url(./recipes/images/norway-1.jpg);
+  background-size: cover;
+}
+
+#belgian-background {
+  background-image: url(./recipes/images/brussels.jpg);
+  background-size: cover;
+}
+
+#austrian-background {
+  background-image: url(./recipes/images/austria.jpg);
+  background-size: cover;
+}
+
+#swiss-background {
+    background-image: url(./recipes/images/switzerland.jpg);
+    background-size: cover;
+}
+
+#swedish-background {
+    background-image: url(./recipes/images/sweden.jpg);
+    background-size: cover;
+}
+
+#finnish-background {
+    background-image: url(./recipes/images/finland-1.jpg);
+    background-size: cover;
+}
+
+#polish-background {
+    background-image: url(./recipes/images/warsaw.jpg);
+    background-size: cover;
+}
+
+#czech-background {
+    background-image: url(./recipes/images/czech.jpg);
+    background-size: cover;
+}
+
+#slovenian-background {
+    background-image: url(./recipes/images/slovenia.jpg);
+    background-size: cover;
+}
+
+#russian-background {
+    background-image: url(./recipes/images/moscow.jpg);
+    background-size: cover;
+}
+
+#turkish-background {
+    background-image: url(./recipes/images/turkey-1.jpg);
+    background-size: cover;
+}
+
+#greek-background {
+    background-image: url(./recipes/images/greece.jpg);
+    background-size: cover;
+}
+
+#estonian-background {
+    background-image: url(./recipes/images/estonia.jpg);
+    background-size: cover;
+}
+
+#latvian-background {
+    background-image: url(./recipes/images/latvia.jpg);
+    background-size: cover;
+}
+
+#lithuanian-background {
+    background-image: url(./recipes/images/lithuania.jpg);
+    background-size: cover;
+}
+
+#slovakian-background {
+    background-image: url(./recipes/images/slovakia.jpg);
+    background-size: cover;
+}
+
+#bulgarian-background {
+    background-image: url(./recipes/images/sofia.jpg);
+    background-size: cover;
+}
+
+#belarussian-background {
+    background-image: url(./recipes/images/belarus.jpg);
+    background-size: cover;
+}
+
+#ukrainian-background {
+    background-image: url(./recipes/images/ukraine.jpg);
+    background-size: cover;
+}
+
+#romanian-background {
+    background-image: url(./recipes/images/romania.jpg);
+    background-size: cover;
+}
+
+#moldovan-background {
+    background-image: url(./recipes/images/moldova.jpg);
+    background-size: cover;
+}
+
+#croat-background {
+    background-image: url(./recipes/images/croatia.jpg);
+    background-size: cover;
+}
+
+#bosnian-and-herzegovinian-background {
+    background-image: url(./recipes/images/bosnia_and_herzegovina.jpg);
+    background-size: cover;
+}
+
+#north-macedonian-background {
+    background-image: url(./recipes/images/north-macedonia.jpg);
+    background-size: cover;
+}
+
+#andorran-background {
+    background-image: url(./recipes/images/andorra.jpg);
+    background-size: cover;
+}
+
+#san-marino-background {
+    background-image: url(./recipes/images/guaita.jpg);
+    background-size: cover;
+}
+
+#monaco-background {
+    background-image: url(./recipes/images/monaco.jpg);
+    background-size: cover;
+}
+
+#luxembourgish-background {
+    background-image: url(./recipes/images/luxembourg.jpg);
+    background-size: cover;
+}
+
+#albanian-background {
+    background-image: url(./recipes/images/albania.jpg);
+    background-size: cover;
+}
+
+#serbian-background {
+    background-image: url(./recipes/images/serbia.jpg);
+    background-size: cover;
+}
+
+#montenegrin-background {
+    background-image: url(./recipes/images/montenegro.jpg);
+    background-size: cover;
+}
+
+#cypriot-background {
+    background-image: url(./recipes/images/cyprus.jpg);
+    background-size: cover;
+}
+
+#liechtensteiner-background {
+    background-image: url(./recipes/images/liechtenstein.jpg);
+    background-size: cover;
+}
+
+#maltese-background {
+    background-image: url(./recipes/images/malta.jpg);
+    background-size: cover;
+}
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -107,12 +282,14 @@ a:hover {
 }
 
 .homepage-image {
-  border-radius: 50%;
-  width: 200px;
-  display: flex;
+  border-radius: 60%;
+  width: 150px;
+  margin-right: -100%;
+  position: relative;
   float: left;
   border-width: thick;
   border: 5px black solid;
+  z-index: 1;
 }
 
 .main-content {
@@ -121,12 +298,13 @@ a:hover {
   padding-left: 10px;
   padding-right: 10px;
   margin: auto;
-  margin-right: 586px;
-  display: table;
+  clear: both;
+  z-index: 2;
+  transform: translate(0%, -3.5%);
   max-width: 694px;
   border-color: black;
   border-width: thick;
-  postion: relative;
+  postion: absolute;
   animation-name: appear;
   animation-duration: 1.5s;
   background-color: #ddffdd;
@@ -163,13 +341,21 @@ a:hover {
 }
 
 /* If screen size differs, the country's coat of arms disappears */
-@media only screen and (max-width: 500px) {
-  .coat-of-arms-box {
-    opacity: 0;
+@media only screen and (max-width: 750px) {
+  .coat-of-arms {
+    height: 0;
+    width: 0;
   }
-  .coat-of-arms-box-left {
-    opacity: 0;
+  .coat-of-arms-left {
+    height: 0;
+    width: 0;
   }
+}
+
+@media only screen and (max-width: 600px) {
+    .homepage-image {
+        width: 80px;
+    }
 }
 
 .img-recipes {
